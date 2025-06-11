@@ -1,5 +1,3 @@
-
-
 document.getElementById('copyEmail')?.addEventListener('click', function (event) {
     event.preventDefault()
     const email = 'znzsndj@gmail.com'
@@ -22,5 +20,41 @@ function showToast(message: string) {
         setTimeout(() => {
             toast.style.visibility = 'hidden';
         }, 500);
+    }, 2500);
+}
+
+const konamiCode: string[] = [
+    "ArrowUp", "ArrowUp",
+    "ArrowDown", "ArrowDown",
+    "ArrowLeft", "ArrowRight",
+    "ArrowLeft", "ArrowRight",
+    "b", "a"
+];
+
+let inputSequence: string[] = [];
+
+window.addEventListener("keydown", (event: KeyboardEvent) => {
+    inputSequence.push(event.key);
+    if (inputSequence.length > konamiCode.length) {
+        inputSequence.shift();
+    }
+
+    if (inputSequence.join("") === konamiCode.join("")) {
+        triggerSeolhwaEasterEgg();
+        inputSequence = [];
+    }
+});
+
+function triggerSeolhwaEasterEgg() {
+    const seolhwaDiv = document.createElement("div");
+    seolhwaDiv.textContent = "설화!!!";
+    seolhwaDiv.className = "big-seolhwa";
+    document.body.appendChild(seolhwaDiv);
+
+    setTimeout(() => {
+        seolhwaDiv.classList.add("fade-out");
+        setTimeout(() => {
+            seolhwaDiv.remove();
+        }, 1000);
     }, 2500);
 }

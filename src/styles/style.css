@@ -289,3 +289,31 @@ main {
 .fade-up-7 { animation-delay: 1.68s; }
 .fade-up-8 { animation-delay: 1.89s; }
 .fade-up-9 { animation-delay: 2.12s; }
+
+.big-seolhwa {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 96px;
+    font-weight: 900;
+    color: #ff66cc;
+    text-shadow: 0 0 10px #fff, 0 0 20px #ff99cc;
+    animation: shake 0.6s ease-in-out 2;
+    z-index: 9999;
+    pointer-events: none;
+    transition: opacity 1s ease;
+}
+
+@keyframes shake {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    20% { transform: translate(-48%, -52%) rotate(-3deg); }
+    40% { transform: translate(-52%, -48%) rotate(3deg); }
+    60% { transform: translate(-50%, -51%) rotate(-2deg); }
+    80% { transform: translate(-50%, -49%) rotate(2deg); }
+    100% { transform: translate(-50%, -50%) rotate(0deg); }
+}
+
+.fade-out {
+    opacity: 0;
+}
