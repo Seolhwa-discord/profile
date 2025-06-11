@@ -33,6 +33,33 @@ nav {
     border-bottom: 1px solid #ddd;
     padding: 1rem 2rem;
     z-index: 1000;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+body {
+    background-color: #fff;
+    color: #000;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#darkModeToggle {
+    position: fixed;
+    top: 10px;
+    right: 2px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+    transition: transform 0.5s ease, color 0.7s ease;
+}
+
+#darkModeToggle:hover {
+    transform: scale(1.2);
+    color: #000;
 }
 
 nav a {
@@ -120,8 +147,6 @@ footer::before {
     background-color: #ddd;
     margin: 0 auto 1rem;
 }
-
-
 
 .fade-up-1 {
     opacity: 0;
@@ -317,3 +342,33 @@ main {
 .fade-out {
     opacity: 0;
 }
+
+/* === 다크모드 스타일 추가 === */
+
+body.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+body.dark-mode nav {
+    background-color: #1a1a1a;
+    border-color: #333;
+}
+
+body.dark-mode nav a {
+    color: #ddd;
+}
+
+body.dark-mode #darkModeToggle {
+    color: #f0f0f0;
+}
+
+body.dark-mode footer {
+    color: #aaa;
+}
+
+body.dark-mode footer::before {
+    background-color: #444;
+}
+
+body.dark-mode .profile

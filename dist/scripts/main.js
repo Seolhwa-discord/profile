@@ -53,3 +53,17 @@ function triggerSeolhwaEasterEgg() {
         }, 1000);
     }, 2500);
 }
+const darkModeToggle = document.getElementById("darkModeToggle");
+if (darkModeToggle) {
+    darkModeToggle.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+        const isDark = document.body.classList.contains("dark-mode");
+        localStorage.setItem("darkMode", isDark ? "true" : "false");
+        darkModeToggle.textContent = isDark ? "☀️" : "🌙";
+    });
+    const savedMode = localStorage.getItem("darkMode");
+    if (savedMode === "true") {
+        document.body.classList.add("dark-mode");
+        darkModeToggle.textContent = "☀️";
+    }
+}

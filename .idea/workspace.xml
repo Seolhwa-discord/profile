@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6734342-5046-4361-a40d-86e1d141abba" name="변경" comment="AddEasterEgg.. why?">
+    <list default="true" id="f6734342-5046-4361-a40d-86e1d141abba" name="변경" comment="Bigggggggggggggggggggger">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/scripts/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/scripts/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/scripts/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/scripts/main.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -113,7 +116,7 @@
       <workItem from="1749113170320" duration="13355000" />
       <workItem from="1749181229898" duration="3257000" />
       <workItem from="1749479661132" duration="1164000" />
-      <workItem from="1749629504090" duration="1909000" />
+      <workItem from="1749629504090" duration="2947000" />
     </task>
     <task id="LOCAL-00001" summary="22222222222222222222222222222222">
       <option name="closed" value="true" />
@@ -155,7 +158,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749630829558</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Bigggggggggggggggggggger">
+      <option name="closed" value="true" />
+      <created>1749631471818</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1749631471818</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -166,6 +177,7 @@
     <MESSAGE value="plsplsplsplspls" />
     <MESSAGE value="Who are you?" />
     <MESSAGE value="AddEasterEgg.. why?" />
-    <option name="LAST_COMMIT_MESSAGE" value="AddEasterEgg.. why?" />
+    <MESSAGE value="Bigggggggggggggggggggger" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bigggggggggggggggggggger" />
   </component>
 </project>
